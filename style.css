@@ -7,6 +7,7 @@
     --desaturated-dark-blue: hsl(214, 17%, 51%);
     --grayish-blue: hsl(212, 23%, 69%);
     --light-grayish-blue: hsl(210, 46%, 95%);
+    --white: hsl(0, 0%, 100%);
 }
 
 html {
@@ -22,6 +23,7 @@ body {
     font-size: var(--font-size);
     margin: 0;
     padding: 0;
+    background-color: var(--white-grayish-blue);
 }
 
 h1, h2, h3, h4, h5 {
@@ -61,4 +63,72 @@ img, picture, svg, video, object {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+.modal {
+    box-shadow: 6px 6px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 1.5rem;
+    overflow: hidden;
+}
+
+.modal__text-wrapper {
+    display: grid;
+    gap: 1rem;
+    background-color: var(--white);
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.modal__text-wrapper--heading {
+    font-weight: var(--font-bold);
+    font-size: calc(var(--font-size) * 1.2);
+    line-height: calc(var(--font-size) * 1.4);
+    color: var(--very-dark-grayish-blue);
+}
+
+.modal__text-wrapper--paragraph {
+    font-weight: var(--font-regular);
+    font-size: calc(var(--font-size) * 0.8);
+    line-height: calc(var(--font-size) * 1.6);
+    color: var(--desaturated-dark-blue);
+}
+
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-wrapper__profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-wrapper__profile--photo {
+    display: block;
+    overflow: hidden;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.profile-wrapper__profile--text-wrapper > .name {
+    font-weight: var(--font-bold);
+    font-size: calc(var(--font-size) * 0.8);
+    color: var(--very-dark-grayish-blue);
+}
+
+.profile-wrapper__profile--text-wrapper > .date {
+    font-weight: var(--font-regular);
+    font-size: calc(var(--font-size) * 0.8);
+    color: var(--grayish-blue);
+}
+
+.profile-wrapper__share-button {
+    background-color: var(--light-grayish-blue);
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
 }

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Article preview component</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
@@ -12,12 +13,26 @@
 <body>
 
   <div class="modal">
-    <h1 class="modal__heading">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
-    <p class="modal__paragraph">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
-    <div class="modal__profile-wrapper">
-      <p class="modal__profile-wrapper--name">Michelle Appleton</p>
-      <p class="modal__profile-wrapper--date">28 Jun 2020</p>
-      <span class="modal__profile-wrapper--share">Share</span>
+    <div class="modal__background-image-wrapper">
+      <img src="images/drawers.jpg" alt="Green drawers">
+    </div>
+    <div class="modal__text-wrapper">
+      <h1 class="modal__text-wrapper--heading">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+      <p class="modal__text-wrapper--paragraph">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+      <div class="profile-wrapper">
+        <div class="profile-wrapper__profile">
+          <span class="profile-wrapper__profile--photo">
+            <img src="images/avatar-michelle.jpg" alt="Women profile">
+          </span>
+          <div class="profile-wrapper__profile--text-wrapper">
+            <p class="name">Michelle Appleton</p>
+            <p class="date">28 Jun 2020</p>
+          </div>
+        </div>
+        <span class="profile-wrapper__share-button">
+          <img src="images/icon-share.svg" alt="Arrow right">
+        </span>
+      </div>
     </div>
   </div>
   
