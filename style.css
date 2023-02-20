@@ -140,6 +140,11 @@ img, picture, svg, video, object {
     place-items: center;
     border-radius: 50%;
     z-index: 50;
+    cursor: pointer;
+}
+
+.profile-wrapper__share-button.themed {
+    background-color: var(--grayish-blue);
 }
 
 .share-wrapper {
@@ -152,6 +157,17 @@ img, picture, svg, video, object {
     align-items: center;
     gap: 1rem;
     padding: 1.5rem 2rem;
+}
+
+.share-wrapper.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 .share-wrapper__text {
@@ -180,5 +196,16 @@ img, picture, svg, video, object {
 @media only screen and (min-width: 700px) {
     .modal {
         flex-direction: row;
+    }
+
+    .share-wrapper {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
     }
 }
