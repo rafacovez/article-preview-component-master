@@ -79,10 +79,11 @@ img, picture, svg, video, object {
 }
 
 .modal__text-wrapper {
+    position: relative;
     display: grid;
     gap: 1rem;
     background-color: var(--white);
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
 }
 
 .modal__text-wrapper--heading {
@@ -103,6 +104,7 @@ img, picture, svg, video, object {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 1rem 0 0 0;
 }
 
 .profile-wrapper__profile {
@@ -137,6 +139,31 @@ img, picture, svg, video, object {
     display: grid;
     place-items: center;
     border-radius: 50%;
+    z-index: 50;
+}
+
+.share-wrapper {
+    background-color: var(--very-dark-grayish-blue);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+}
+
+.share-wrapper__text {
+    text-transform: uppercase;
+    font-weight: var(--font-regular);
+    font-size: calc(var(--font-size) * 0.8);
+    color: var(--grayish-blue);
+    letter-spacing: 5px;
+}
+
+.share-wrapper__icon {
+    cursor: pointer;
 }
 
 .attribution {
@@ -153,12 +180,5 @@ img, picture, svg, video, object {
 @media only screen and (min-width: 700px) {
     .modal {
         flex-direction: row;
-    }
-
-    .modal__text-wrapper {
-        display: grid;
-        gap: 1rem;
-        background-color: var(--white);
-        padding: 3rem;
     }
 }
