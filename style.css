@@ -24,6 +24,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--white-grayish-blue);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
 }
 
 h1, h2, h3, h4, h5 {
@@ -70,13 +73,16 @@ img, picture, svg, video, object {
     border-radius: 8px;
     margin: 1.5rem;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
 }
 
 .modal__text-wrapper {
     display: grid;
     gap: 1rem;
     background-color: var(--white);
-    padding: 2rem 2rem 1rem 2rem;
+    padding: 2rem;
 }
 
 .modal__text-wrapper--heading {
@@ -131,4 +137,28 @@ img, picture, svg, video, object {
     display: grid;
     place-items: center;
     border-radius: 50%;
+}
+
+.attribution {
+    font-size: calc(var(--font-size) * 0.8);
+    text-align: center;
+    color: var(--grayish-blue);
+    padding: 2rem 0;
+}
+
+.attribution > a {
+    color: var(--very-dark-grayish-blue);
+}
+
+@media only screen and (min-width: 700px) {
+    .modal {
+        flex-direction: row;
+    }
+
+    .modal__text-wrapper {
+        display: grid;
+        gap: 1rem;
+        background-color: var(--white);
+        padding: 3rem;
+    }
 }
