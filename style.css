@@ -143,10 +143,6 @@ img, picture, svg, video, object {
     cursor: pointer;
 }
 
-.profile-wrapper__share-button.themed {
-    background-color: var(--grayish-blue);
-}
-
 .share-wrapper {
     background-color: var(--very-dark-grayish-blue);
     position: absolute;
@@ -198,14 +194,7 @@ img, picture, svg, video, object {
         flex-direction: row;
     }
 
-    .share-wrapper {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        border: 0;
-    }
+    .modal__text-wrapper {
+        padding: 2rem 2rem 0 2rem;
+      }
 }
